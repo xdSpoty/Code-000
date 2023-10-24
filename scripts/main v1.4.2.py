@@ -13,16 +13,15 @@ from rich.progress import ( BarColumn, Progress )
                             
 
 hURL = input("Link: ")
-st = int(input("Staffel: "))
-ep = int(input("Episoden: "))
-lang = int(input("(1 = Deutsch, 2 = eng_sub, 3 = germ_sub) Sprache: "))
-print()
+st = int(input("Season: "))
+ep = int(input("Episode: "))
+lang = int(input("(1 = German, 2 = eng_sub, 3 = germ_sub) Language: "))
 num = 0
 
 with Progress("[progress.description]{task.description:>}",BarColumn(bar_width=None),"[progress.percentage]{task.percentage:>3.1f}%",) as progress:
     
     episode = progress.add_task("[cyan]Episode...", total=100)
-    series = progress.add_task("[cyan]Series...", total=ep)
+    series = progress.add_task("[cyan]Season...", total=ep)
     
     while not progress.finished:
 
