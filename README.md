@@ -14,3 +14,18 @@ Code-000 is a simple [Aniworld](https://aniworld.to/) donwlaod script written in
     $ python3 scripts/main\ v1.4.2.py 
     $ python3 scripts/dwlndepisode.py
     ```
+- ```sh
+  $ Link: # The link structure has to be like => https://aniworld.to/anime/stream/jujutsu-kaisen
+  ```
+
+- ```sh
+  $ Season: # Number of the Season
+  ```
+
+- ```sh
+  $ Episode: # Number of Episodes
+  ```
+
+- ```sh
+  $ Language: # Select the language in which you want to download the episodes
+  ```
